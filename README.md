@@ -2,7 +2,7 @@
 
 ## About
 
-Example of input field with axios post calls and Redux.
+Example of input field with axios post calls made with Redux.
 
 ### How to run the project
 
