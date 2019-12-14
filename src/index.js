@@ -8,7 +8,6 @@ import "./index.css";
 import App from "./App";
 
 import reducers from "./reducers";
-//ReactDOM.render(<App />, document.getElementById("root"));
 
 const store = createStore(reducers, applyMiddleware(thunk));
 

@@ -5,15 +5,8 @@ const initialState = {
   result: null
 };
 
-const inputReducer = (state = initialState, action) => {
-  if (action.type === "ENTER_VALUE") {
-    return action.text;
-  }
-  return state;
-};
-
-const apiReducer = (state = initialState, action) => {
-  if (action.type === "ADD_EXPOSURE_VALUE") {
+const chainApiReducer = (state = initialState, action) => {
+  if (action.type === "ADD_FACILITY_VALUE") {
     return { ...state, result: action.payload, isModalOpen: true };
   }
   if (action.type === "CLOSE_MODAL") {
@@ -23,5 +16,5 @@ const apiReducer = (state = initialState, action) => {
 };
 
 export default combineReducers({
-  api: apiReducer
+  chainApi: chainApiReducer
 });
