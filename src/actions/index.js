@@ -2,13 +2,6 @@ import axios from "axios";
 
 const ROOT_URL = "http://localhost:3001";
 
-// export const handleChangeValue = e => {
-//   return {
-//     type: "ENTER_VALUE",
-//     text: e.target.value
-//   };
-// };
-
 export const handleModal = () => {
   return {
     type: "CLOSE_MODAL"
