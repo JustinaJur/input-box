@@ -2,9 +2,9 @@ import React from "react";
 import { connect } from "react-redux";
 import { Header, Form, Button, Modal } from "semantic-ui-react";
 
-import { addValue, handleModal } from "./actions";
+import { addValue, handleModal } from "../actions";
 
-class Input extends React.Component {
+class InputBox extends React.Component {
   state = {
     input: ""
   };
@@ -62,4 +62,4 @@ const mapStateToProps = state => {
 export default connect(mapStateToProps, {
   addValue,
   handleModal
-})(Input);
+})(InputBox);

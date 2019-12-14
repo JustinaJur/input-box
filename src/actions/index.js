@@ -13,6 +13,7 @@ export const addValue = value => async dispatch => {
     val1: value,
     val2: value
   });
+
   dispatch({ type: "ADD_PERSON_VALUE", payload: person.data });
 
   const facility = await axios.post(`${ROOT_URL}/facility`, {
